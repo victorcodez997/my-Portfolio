@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Get a Free Quote - Victor.u.dev</title>
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/quote.css" />
+      <!-- Add favicon -->
+      <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="images/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="images/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="images/favicon-16x16.png"
+      />
+    </head>
+    <body>
+      <!-- Header -->
+      <header>
+        <div class="container">
+          <nav>
+            <div
+              class="logo-container"
+              onclick="window.location.href='index.html'"
+            >
+              <div class="logo-image">
+                <img src="images/fave.png" alt="Victor Udoh" />
+              </div>
+              <div class="logo" id="logo">victor.u.dev</div>
+            </div>
+            <div class="nav-links">
+              <a href="index.html#portfolio">Work</a>
+              <a href="index.html#about">About</a>
+              <a href="index.html#services">Services</a>
+              <a href="index.html#testimonials">Testimonials</a>
+              <a href="index.html#contact">Contact</a>
+            </div>
+            <button class="mobile-menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <div class="mobile-menu-links">
+          <a href="index.html#portfolio">Work</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#testimonials">Testimonials</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+
+      <!-- Quote Form Section -->
+      <section class="quote-section">
+        <div class="container">
+          <div class="quote-header">
+            <h1>Get Your Free Quote</h1>
+            <p>
+              Tell me about your project and I'll provide a detailed estimate
+            </p>
+          </div>
+
+          <form id="quote-form" class="quote-form">
+            <!-- Personal Information -->
+            <div class="form-section">
+              <h2>Personal Information</h2>
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company" />
+              </div>
+            </div>
+
+            <!-- Project Details -->
+            <div class="form-section">
+              <h2>Project Details</h2>
+              <div class="form-group">
+                <label for="project-type">Project Type *</label>
+                <select id="project-type" name="project-type" required>
+                  <option value="">Select a project type</option>
+                  <option value="business-website">Business Website</option>
+                  <option value="ecommerce">E-Commerce Store</option>
+                  <option value="portfolio">Portfolio Website</option>
+                  <option value="web-application">Web Application</option>
+                  <option value="redesign">Website Redesign</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="project-description">Project Description *</label>
+                <textarea
+                  id="project-description"
+                  name="project-description"
+                  rows="4"
+                  required
+                  placeholder="Please describe your project in detail..."
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="target-audience">Target Audience</label>
+                <input
+                  type="text"
+                  id="target-audience"
+                  name="target-audience"
+                  placeholder="Who is your target audience?"
+                />
+              </div>
+            </div>
+
+            <!-- Features & Requirements -->
+            <div class="form-section">
+              <h2>Features & Requirements</h2>
+              <div class="form-group">
+                <label>Required Features (Select all that apply)</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="features"
+                      value="responsive-design"
+                    />
+                    <span class="checkmark"></span>
+                    Responsive Design (Mobile-friendly)
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="features" value="ecommerce" />
+                    <span class="checkmark"></span>
+                    E-commerce Functionality
+                  </label>
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="features"
+                      value="contact-form"
+                    />
+                    <span class="checkmark"></span>
+                    Contact Form
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="features" value="blog" />
+                    <span class="checkmark"></span>
+                    Blog/News Section
+                  </label>
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="features"
+                      value="user-accounts"
+                    />
+                    <span class="checkmark"></span>
+                    User Accounts/Login
+                  </label>
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="features"
+                      value="payment-integration"
+                    />
+                    <span class="checkmark"></span>
+                    Payment Integration
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="features" value="seo" />
+                    <span class="checkmark"></span>
+                    SEO Optimization
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="features" value="analytics" />
+                    <span class="checkmark"></span>
+                    Analytics Integration
+                  </label>
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="features"
+                      value="social-media"
+                    />
+                    <span class="checkmark"></span>
+                    Social Media Integration
+                  </label>
+                  <label class="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="features"
+                      value="multilingual"
+                    />
+                    <span class="checkmark"></span>
+                    Multilingual Support
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="additional-features">Additional Features</label>
+                <textarea
+                  id="additional-features"
+                  name="additional-features"
+                  rows="3"
+                  placeholder="Any other specific features or requirements..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Design Preferences -->
+            <div class="form-section">
+              <h2>Design Preferences</h2>
+              <div class="form-group">
+                <label for="design-style">Preferred Design Style</label>
+                <select id="design-style" name="design-style">
+                  <option value="">Select a style</option>
+                  <option value="modern">Modern & Clean</option>
+                  <option value="minimal">Minimalist</option>
+                  <option value="corporate">Corporate/Professional</option>
+                  <option value="creative">Creative/Bold</option>
+                  <option value="vintage">Vintage/Retro</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="color-preferences">Color Preferences</label>
+                <input
+                  type="text"
+                  id="color-preferences"
+                  name="color-preferences"
+                  placeholder="Any specific colors or brand guidelines?"
+                />
+              </div>
+              <div class="form-group">
+                <label for="reference-websites">Reference Websites</label>
+                <textarea
+                  id="reference-websites"
+                  name="reference-websites"
+                  rows="3"
+                  placeholder="List any websites you like for design inspiration..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Timeline & Budget -->
+            <div class="form-section">
+              <h2>Timeline & Budget</h2>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="timeline">Desired Timeline</label>
+                  <select id="timeline" name="timeline">
+                    <option value="">Select timeline</option>
+                    <option value="asap">As soon as possible</option>
+                    <option value="1-2-weeks">1-2 weeks</option>
+                    <option value="1-month">1 month</option>
+                    <option value="2-3-months">2-3 months</option>
+                    <option value="flexible">Flexible</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="budget">Estimated Budget (USD)</label>
+                  <select id="budget" name="budget">
+                    <option value="">Select budget range</option>
+                    <option value="under-1000">Under $1,000</option>
+                    <option value="1000-2500">$1,000 - $2,500</option>
+                    <option value="2500-5000">$2,500 - $5,000</option>
+                    <option value="5000-10000">$5,000 - $10,000</option>
+                    <option value="over-10000">Over $10,000</option>
+                    <option value="not-sure">Not sure</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="form-section">
+              <h2>Additional Information</h2>
+              <div class="form-group">
+                <label for="content-management">Content Management</label>
+                <select id="content-management" name="content-management">
+                  <option value="">Select preference</option>
+                  <option value="wordpress">WordPress</option>
+                  <option value="custom-cms">Custom CMS</option>
+                  <option value="static-site">Static Site (No CMS)</option>
+                  <option value="not-sure">Not sure</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="hosting-domain">Hosting & Domain</label>
+                <select id="hosting-domain" name="hosting-domain">
+                  <option value="">Select option</option>
+                  <option value="need-both">
+                    Need both hosting and domain
+                  </option>
+                  <option value="have-domain">Have domain, need hosting</option>
+                  <option value="have-both">
+                    Have both hosting and domain
+                  </option>
+                  <option value="not-sure">Not sure</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="maintenance">Ongoing Maintenance</label>
+                <select id="maintenance" name="maintenance">
+                  <option value="">Select preference</option>
+                  <option value="monthly-support">
+                    Monthly support package
+                  </option>
+                  <option value="as-needed">Support as needed</option>
+                  <option value="self-manage">Will manage myself</option>
+                  <option value="not-sure">Not sure</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="additional-notes">Additional Notes</label>
+                <textarea
+                  id="additional-notes"
+                  name="additional-notes"
+                  rows="4"
+                  placeholder="Any other information that might be helpful..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-submit">
+              <button type="submit" class="btn btn-large">
+                Submit Quote Request
+              </button>
+              <p class="form-note">
+                I'll get back to you within 24 hours with a detailed quote
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <p>&copy; 2025 Victor.dev. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script src="js/script.js"></script>
+      <script src="js/quote.js"></script>
+    </body>
+  </html>
+</html>
